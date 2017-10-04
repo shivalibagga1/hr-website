@@ -31,36 +31,52 @@ header{
 
 	#nav{
 		background: rgba(255, 255, 255, 0.3);
-		padding: 1%;
+		padding: 0%;
 	}
 
 	#nav a{
 		color: rgb(255, 255, 255);
 		position: relative;
+		/*margin-top: -15px !important;*/
+		width: 100%;
+		display: none;
 	}
 
 	#nav a:hover{
 		color: #5bc0eb;
 		background: none;
 	}
+
+	.collapse-menu{
+		float: right;
+		border: none;
+	    outline: none;
+	    border-radius: 16%;
+	    cursor: pointer;
+	}
+
+	#btn{
+		width: 100%;
+	}
+
 /*
 	#items{
 		margin-left: 14%;
 	}*/
 	#navitem{
-		margin-left: 14%;
+		margin-left: 0;
 	}
 
-	.brand-image{
-		width:15%;
+	/*#brand-image{
+		width:27%;
 		height: 67px;
 		background-image: url(../images/brand-logo.png);
 		background-size: 100% 100%;
 		display: inline-block;
 		position: absolute;
 		left: 0;
-		top:0;
-	}
+		top:-12px;
+	}*/
 	/*#brand-image img{
 		position: absolute;
 		width: 37%;
@@ -70,12 +86,14 @@ header{
 	}*/
 
 	.heading{
+		width: 96%;
+		text-align: center;
 		font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-weight: 300;
 		font-size: 46px;
 		position:absolute;
 		top: 50%;
-		left: 30%;
+		left: 2%;
 		transform: translate(0,-51%);
 		color: #fff;
 	}
@@ -139,15 +157,30 @@ header{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
-    #brand-image img{
+    . brand-image img{
     	width: 15%;
 		top: -37px;
 		left: -25px;
     }
 
     #nav{
-		padding: 1.7%;
+		padding: 1%;
+	}
+
+	/*#navitem{
+		margin-left: 14%;
+	}*/
+
+	#nav a{
+		display: block;
+		width: initial;
+	}
+
+	#btn{
+		display: none;
+
 	}
 }
+
 
 
