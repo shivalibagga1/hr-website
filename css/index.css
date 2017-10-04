@@ -172,7 +172,7 @@ header{
 	}*/
 
 	#nav a{
-		display: block;
+		display: inline;
 		width: initial;
 	}
 
