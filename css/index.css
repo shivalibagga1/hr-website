@@ -35,28 +35,52 @@ header{
 	}
 
 	#nav a{
-		color: rgb(255, 255, 255);
+		color: #000;
 		position: relative;
 		/*margin-top: -15px !important;*/
-		width: 100%;
+		/*width: 100%;*/
 		display: none;
+		background: #fff;
+		z-index: 10;
 	}
 
 	#nav a:hover{
 		color: #5bc0eb;
-		background: none;
 	}
 
+	#brand-container{
+		padding:0;
+	}
+
+	#brand-container img{
+		width: 65px;
+	}
+
+	#brand-container a{
+		display: block;
+		background: none;
+	}
 	.collapse-menu{
 		float: right;
-		border: none;
+		border: 1px solid #53afd6;
 	    outline: none;
 	    border-radius: 16%;
 	    cursor: pointer;
+	    background: none;
+	    transition: background 0.2s,border 0.2s;
+	}
+
+	.collapse-menu:hover{
+		background: #53afd6;
+	}
+
+	.fa{
+		color: #fff;
 	}
 
 	#btn{
 		width: 100%;
+		margin-right: 3px;
 	}
 
 /*
@@ -90,18 +114,19 @@ header{
 		text-align: center;
 		font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-weight: 300;
-		font-size: 46px;
+		font-size: 38px;
 		position:absolute;
 		top: 50%;
 		left: 2%;
 		transform: translate(0,-51%);
 		color: #fff;
+		margin: 0;
 	}
 
 	#btn1{
 		position: absolute;
-		top:60%;
-		left:36%;
+		top:63%;
+		left:22%;
 		margin-top: 1%;
 		background: #53afd6;
 		border: 1px solid #4b9ec1;
@@ -117,8 +142,8 @@ header{
 
 	#btn2{
 		position: absolute;
-		top:60%;
-		left:53%;
+		top:63%;
+		left:52%;
 		margin-top: 1%;
 		border: 1px solid #53afd6;
     	background: none;
@@ -135,7 +160,7 @@ header{
 	.header-btn{
 		border: none;
 		outline: none;
-		width: 15%;
+		width: 28%;
 		padding: 1%;
 	}
 
@@ -157,7 +182,7 @@ header{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
-    . brand-image img{
+    .brand-image img{
     	width: 15%;
 		top: -37px;
 		left: -25px;
@@ -165,6 +190,7 @@ header{
 
     #nav{
 		padding: 1%;
+		background: rgba(255, 255, 255, 0.3);
 	}
 
 	/*#navitem{
@@ -172,14 +198,49 @@ header{
 	}*/
 
 	#nav a{
-		display: inline;
+		display: block!important;
 		width: initial;
+		color: rgb(255, 255, 255);
+		background: none;
+	}
+
+	#nav a:hover{
+		background: none;
+	}
+
+	.heading{
+		font-size: 46px;
 	}
 
 	#btn{
 		display: none;
 
 	}
+
+	#btn1{
+		top:60%;
+		left:35%;
+	}
+
+	#btn2{
+		top:60%;
+		/*position: absolute;
+		top:60%;
+		left:53%;
+		margin-top: 1%;
+		border: 1px solid #53afd6;
+    	background: none;
+    	border-radius: 10px;
+    	color: #fff;
+    	font-size: 16px;
+    	transition: background 0.3s,border 0.3s;*/
+	}
+
+	.header-btn{
+		width: 15%;
+	}
+
+
 }
 
 
