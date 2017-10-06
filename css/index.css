@@ -7,14 +7,16 @@ html,body{
 header{
 	position: relative;
 	width: 100%;
+	letter-spacing: 1.5px;
 }
 
 .header-image{
 		/*width: 100%;*/
 		height: 380px; /*360px*/
-		background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/hr-image1.jpg);
+		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hr-image1.jpg);
 
 		background-size: 100% 100%;
+		background-attachment: fixed;
 	}
 
 	.ui.menu{
@@ -164,6 +166,78 @@ header{
 		padding: 1%;
 	}
 
+	.slogan{
+		padding: 5%;
+		color: #fff;
+		/*background: #264653;*/
+		background: #37738c;
+		text-align: center;
+		letter-spacing: 1.5px;
+	}
+	.team{
+		background-image: url(../images/team.jpg);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		height: 380px;
+	}
+
+	.about{
+		float: left;
+		background: #37738c;
+		height: 255px;
+		padding: 5%;
+		letter-spacing: 1.5px;
+	}
+
+	.about-us{
+		position: relative;
+		top:-110px;
+	}
+	.about-img{
+		float: left;
+		background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/about.jpg);
+		background-size: 100% 100%;
+		height: 138px;
+		color: #fff;
+	    text-align: center;
+		padding: 5%;
+	}
+
+	.about-info{
+		float: left;
+		color: #fff;
+		background: #53afd6;
+		height: 138px;
+		text-align: center;
+		padding: 5%;
+	}
+
+	.function{
+		float: left;
+		min-height: 280px;
+		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/function.jpg);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		letter-spacing: 1.5px;
+	}
+
+	.func1{
+		float: left;
+		height: 100px;
+		margin: 3% 0;
+		padding: 10%;
+	}
+
+	h3{
+		margin-bottom: 0!important;
+	}
+
+	h5{
+		margin-top: 3%!important;
+	}
+
 	[class*="col-"]{
 	width: 100%;
 }
@@ -240,7 +314,13 @@ header{
 		width: 15%;
 	}
 
+	.about{
+		height: 100px;
+	}
 
+	.func1{
+		padding: 5%;
+	}
 }
 
 
