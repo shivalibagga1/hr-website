@@ -3,7 +3,9 @@ html,body{
 	min-height: 100%;
 	height: 100%;
 }
-
+/*=======================================*/
+/*Header styling*/
+/*=======================================*/
 header{
 	position: relative;
 	width: 100%;
@@ -26,6 +28,10 @@ header{
 		top:0;
 		left: 0;
 	}
+
+/*=======================================*/
+/*Nav styling*/
+/*=======================================*/
 
 	.menu a{
 		font-weight: 600;
@@ -75,6 +81,10 @@ header{
 	.collapse-menu:hover{
 		background: #53afd6;
 	}
+
+/*=======================================*/
+/*Nav buttons,backgrounds,Brand-image*/
+/*=======================================*/
 
 	.fa{
 		color: #fff;
@@ -166,6 +176,9 @@ header{
 		padding: 1%;
 	}
 
+/*=======================================*/
+/*About Us styling*/
+/*=======================================*/
 	.slogan{
 		padding: 5%;
 		color: #fff;
@@ -212,6 +225,9 @@ header{
 		padding: 5%;
 	}
 
+/*=======================================*/
+/*HR Function styling*/
+/*=======================================*/
 	.function{
 		float: left;
 		min-height: 280px;
@@ -225,13 +241,15 @@ header{
 
 	.func1{
 		float: left;
-		height: 100px;
+		margin-top: 10%;
+		padding: 0 12%;
+		/*height: 100px;
 		margin: 3% 0;
-		padding: 10%;
+		padding: 10%;*/
 	}
 
 	h3{
-		margin-bottom: 0!important;
+		margin: 0!important;
 	}
 
 	h5{
@@ -242,6 +260,10 @@ header{
 	width: 100%;
 }
 
+
+/*=================================================*/
+/*Media queries for screens widtrh more than 768px*/
+/*=================================================*/
 @media only screen and (min-width: 768px){
 	.col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -319,6 +341,7 @@ header{
 	}
 
 	.func1{
+		margin-top: 3%;
 		padding: 5%;
 	}
 }
