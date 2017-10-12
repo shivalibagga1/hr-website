@@ -277,9 +277,6 @@ header{
 	height: 266px;
 }
 
-.np1{
-	width: 50%;
-}
 /*.paper{*/
 	/*position: absolute;*/
 	/*left: 257px;*/
@@ -294,13 +291,10 @@ header{
 
 .paper1{
 	position: relative;
+	width: 50%;
 }
 
 .half{
-	/*width: 43%!important;
-    position: relative;
-    top: 0;
-    right: -102px;*/
     animation-name: example;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
@@ -327,11 +321,6 @@ header{
 	height: 266px;
 	position: relative;
 	overflow: auto;
-}
-
-.news-info img{
-	/*transform: scale(1.2);
-	height: 100%;*/
 }
 
 .news-content{
@@ -386,15 +375,6 @@ header{
 
 #news-btn:hover{
 		background: #438cab;	
-	}
-
-#news-more{
-		/*color: #000;*/
-		/*position: absolute;     
- 		top: 52%;     
- 		left: 55%;
-		transform: rotate3d(-2,0,-2,51deg) skew(24deg);*/
-    	/*font-size: 11px;*/
 	}
 
 
@@ -458,16 +438,6 @@ header{
 
 	#btn2{
 		top:60%;
-		/*position: absolute;
-		top:60%;
-		left:53%;
-		margin-top: 1%;
-		border: 1px solid #53afd6;
-    	background: none;
-    	border-radius: 10px;
-    	color: #fff;
-    	font-size: 16px;
-    	transition: background 0.3s,border 0.3s;*/
 	}
 
 	.header-btn{
@@ -508,26 +478,6 @@ header{
     	font-size: 14px;
 	}
 
-	/*#news1{
-		top: 16%;
-    	left: 23%;
-    	transform: rotate3d(-3,0,-1.2,-54deg) skew(-29deg);
-    	font-size: 25px;
-	}
-
-	#news2{
-		top: 48%;
-    	left: 52%;
-    	transform: rotate3d(-3,0,-1.2,-55deg) skew(-10deg);
-    	font-size: 25px;
-	}*/
-
-	#news-more{
-		/*top: 65%;
-    	left: 66%;
-   		transform: rotate3d(-3,0,-1.7,-39deg) skew(-26deg);*/
-    	/*font-size: 14px;*/
-	}
 }
 
 
