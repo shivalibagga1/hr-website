@@ -289,9 +289,12 @@ header{
 	/*top: 3px;*/
 /*}*/
 
+.np1{
+	width: 50%;
+}
+
 .paper1{
 	position: relative;
-	width: 50%;
 }
 
 .half{
