@@ -241,6 +241,11 @@ header{
 		letter-spacing: 1.5px;
 	}
 
+	.function h2{
+		padding-top: 5%;
+		margin: 0;
+	}
+
 	.func1{
 		float: left;
 		margin-top: 10%;
@@ -349,7 +354,55 @@ header{
 		color: #fff;	
 	}
 
+/*=======================================*/
+/*Latest Updates*/
+/*=======================================*/
 
+.others{
+	float: left;
+	margin: 3% 1.6% 0 1.6%;
+	height: 250px;
+	width: 30%!important;
+}
+
+/*.other{
+	width: 100%;
+}
+*/
+.test{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/testimonials.jpg);
+	background-size: 100% 100%;
+}
+
+.art{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/article1.jpg);
+	background-size: 100% 100%;
+}
+
+.inter{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/interview.jpg);
+	background-size: 100% 100%;
+}
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+     -webkit-animation: fadeIn 0.85s linear;
+	animation: fadeIn 0.85s linear;
+}
+
+
+@-webkit-keyframes fadeIn {
+	0% { }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { }
+	100% { opacity: 1; }
+}
 
 /*=================================================*/
 /*Media queries for screens widtrh more than 768px*/
@@ -421,7 +474,7 @@ header{
 	}
 
 	.func1{
-		margin-top: 3%;
+		margin-top: 1%;
 		padding: 5%;
 	}
 	
