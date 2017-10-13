@@ -259,6 +259,10 @@ header{
 		margin-top: 5%;
 	}
 
+	.func-img{
+		width: 50px;
+	}
+
 	.func1:last-child{
 		margin-bottom: 10%;
 	}
@@ -267,8 +271,10 @@ header{
 		margin: 0!important;
 	}
 
-	h5{
+	p{
 		margin-top: 3%!important;
+		font-size: 90%;
+		letter-spacing: 3px;
 	}
 
 	[class*="col-"]{
