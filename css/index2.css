@@ -255,6 +255,14 @@ header{
 		padding: 10%;*/
 	}
 
+	.function h2 + div{
+		margin-top: 5%;
+	}
+
+	.func1:last-child{
+		margin-bottom: 10%;
+	}
+
 	h3{
 		margin: 0!important;
 	}
@@ -334,10 +342,11 @@ header{
 }
 
 #news1{
+	width: 80%;
 	position: absolute;
     top: 50%;
-    left: 18%;
-    transform: translate(0,1%);
+    left: 10%;
+    transform: translate(0,-51%);
 }
 
 .more{
@@ -362,7 +371,25 @@ header{
 	float: left;
 	margin: 3% 1.6% 0 1.6%;
 	height: 250px;
-	width: 30%!important;
+	/*width: 30%!important;*/
+	text-align: center;
+	position: relative;
+	box-shadow: 5px 5px 5px #7c8891;
+}
+
+.others h3{
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-51%);
+	left: 25%;
+	width: 50%;
+	letter-spacing: 1.5px;
+	color: #fff;
+	font-size: 100%;
+}
+
+.others h3:hover{
+	letter-spacing: 2.5px;
 }
 
 /*.other{
@@ -391,17 +418,18 @@ header{
      opacity:1;
      -webkit-animation: fadeIn 0.85s linear;
 	animation: fadeIn 0.85s linear;
+	transform: scale(1);
 }
 
 
 @-webkit-keyframes fadeIn {
 	0% { }
-	100% { opacity: 1; }
+	100% { opacity: 1;transform: scale(2); }
 }
 
 @keyframes fadeIn {
 	0% { }
-	100% { opacity: 1; }
+	100% { opacity: 1; transform: scale(2);}
 }
 
 /*=================================================*/
@@ -477,11 +505,34 @@ header{
 		margin-top: 1%;
 		padding: 5%;
 	}
+
+	.function h2 + div{
+		margin-top: 1%;
+	}
 	
 	/*.paper{
 		left: 163px;
 	}*/
 
+	.others{
+		width: 30%!important;
+	}
+
+	.others h3{
+		font-size: 150%;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large screen only"]:not(.mobile),
+  [class*="widescreen only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
 }
 
 
