@@ -12,10 +12,25 @@ header{
 	letter-spacing: 1.5px;
 }
 
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
 .header-image{
 		/*width: 100%;*/
 		height: 380px; /*360px*/
-		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hr-image1.jpg);
+		/*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hr-image1.jpg);*/
 
 		background-size: 100% 100%;
 		background-attachment: fixed;
@@ -52,7 +67,7 @@ header{
 		z-index: 10;
 	}
 
-	#nav a:hover{
+	#nav a:hover,#nav a:active,#nav a:visited{
 		color: #5bc0eb;
 	}
 
@@ -392,10 +407,12 @@ header{
 	letter-spacing: 1.5px;
 	color: #fff;
 	font-size: 100%;
+	transition: color 0.3s;
 }
 
 .others h3:hover{
-	letter-spacing: 2.5px;
+	color: #5bc0eb;
+	/*letter-spacing: 2.5px;*/
 }
 
 /*.other{
@@ -422,20 +439,38 @@ header{
 }
 .visible{
      opacity:1;
-     -webkit-animation: fadeIn 0.85s linear;
-	animation: fadeIn 0.85s linear;
-	transform: scale(1);
+     -webkit-animation: fadeIn 0.95s linear;
+	animation: fadeIn 0.95s linear;
+	/*transform: scale(1);*/
 }
 
 
 @-webkit-keyframes fadeIn {
 	0% { }
-	100% { opacity: 1;transform: scale(2); }
+	100% { opacity: 1; }
 }
 
 @keyframes fadeIn {
 	0% { }
-	100% { opacity: 1; transform: scale(2);}
+	100% { opacity: 1; }
+}
+
+/*=======================================*/
+/*Footer styling*/
+/*=======================================*/
+footer{
+	float: left;
+	padding: 3%;
+}
+.mission{
+	float:left;
+}
+.social{
+	float:left;
+}
+
+.job-alerts{
+	float:left;
 }
 
 /*=================================================*/

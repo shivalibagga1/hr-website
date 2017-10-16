@@ -22,17 +22,24 @@
 <!-- Navbar -->
 <!-- ====================================== -->
 	<header class="col-12">
+		<iframe width="100%" height="380px" src="https://www.youtube.com/embed/9ZLbSk1Te68?autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+		<!-- <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+	  WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button 
+	<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+	<source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+	</video> -->
+
 		<div class="ui stackable tabs menu" id="nav">
 		<!-- <div id="items"> -->
 			<div class="item" id="brand-container"><a  href="javascript:void(0);"><img src="images/brand-logo.png"></a> <span id="btn"><button class="collapse-menu"><i class="fa fa-bars" aria-hidden="true"></i>
 </button><p/san></div>
 			
-		  	<a class="item" id="navitem" data-tab="About Us">About Us</a>
-		  	<a class="item" data-tab="Contact Us">Contact Us</a>
-		  	<a class="item" data-tab="Career">Career</a>
+		  	<a class="item" id="navitem" data-tab="About Us" href="javascript:void(0);">About Us</a>
+		  	<a class="item" data-tab="Contact Us"  href="javascript:void(0);">Contact Us</a>
+		  	<a class="item" data-tab="Career"  href="javascript:void(0);">Career</a>
 			  	<div class="right menu">
-				    <a class="item item1">Sign Up</a>
-				    <a class="item item1">Help</a>
+				    <a class="item item1"  href="javascript:void(0);">Sign Up</a>
+				    <a class="item item1"  href="javascript:void(0);">Help</a>
 		  		</div>
 		  		<!-- </div> -->
 		  		<!-- <div class="brand-image"> -->
@@ -106,7 +113,7 @@
 			<p class="tablet only computer only">Appraisals is a way to motivate our employees</p>
 		</div>
 		<div class="col-4 func1">
-			<img class="func-img" src="images/comp.png">
+			<img class="func-img" src="images/fund.png">
 			<h3>Compensations and Benefits</h3>
 			<p class="tablet only computer only">Compensation is like a reward for employee's efforts</p>
 		</div>
@@ -149,7 +156,29 @@
 
 </div>
 	</main>
-	<footer>
+	<footer class="col-12">
+		<div class="col-4 mission">
+			<h3>Our Mission</h3>
+			<p>To offer best opportunities to individuals and hire best talents.</p>
+		</div>
+		<div class="col-4 social">
+		 <a href="https://www.facebook.com"><img src="images/Facebook.png"></a>
+		 <a href="https://twitter.com"><img src="images/Twitter.png"></a>
+		 <a href="https://www.google.co.in"><img src="images/GooglePlus.png"></a>
+		</div>
+		<div class="col-4 job-alerts">
+			<form class="ui form">
+			  <div class="field">
+			    <label>Username</label>
+			    <input name="username" placeholder="Username" type="text">
+			  </div>
+			  <div class="field">
+			    <label>Password</label>
+			    <input name="password" placeholder="Password" type="text">
+			  </div>
+			  <button class="ui button" type="submit">Submit</button>
+			</form>
+		</div>
 	</footer>
 <script type="text/javascript" src="js/index.js"></script> 
 </body>
