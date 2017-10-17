@@ -8,20 +8,20 @@ $(document).ready(function(){
 });
 
 
-// $(window).scroll(function () {
-//     var topOfWindow = $(window).scrollTop(),
-//         bottomOfWindow = topOfWindow + $(window).height();
+$(window).scroll(function () {
+    var topOfWindow = $(window).scrollTop(),
+        bottomOfWindow = topOfWindow + $(window).height();
 
-//     $('.others').each(function () {
-//         var imagePos = $(this).offset().top;
+    $('.others').each(function () {
+        var imagePos = $(this).offset().top;
 
-//         if(imagePos <= bottomOfWindow && imagePos >= topOfWindow){
-//             $(this).addClass('visible');
-//         }else{
-//             // $(this).removeClass('visible');
-//         }
-//     });
-// });
+        if(imagePos <= bottomOfWindow && imagePos >= topOfWindow){
+            $(this).addClass('visible');
+        }else{
+            // $(this).removeClass('visible');
+        }
+    });
+});
 
 // var vid = document.getElementById("bgvid");
 // var pauseButton = document.querySelector("#polina button");
