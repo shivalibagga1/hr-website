@@ -12,11 +12,13 @@ $(window).scroll(function () {
     var topOfWindow = $(window).scrollTop(),
         bottomOfWindow = topOfWindow + $(window).height();
 
-    $('.others').each(function () {
+    $('.others').each(function (index) {
         var imagePos = $(this).offset().top;
 
         if(imagePos <= bottomOfWindow && imagePos >= topOfWindow){
-            $(this).addClass('visible');
+            // $(this).addClass('visible').delay();
+            var $this = $(this);
+            setTimeout(function () { $this.addClass("visible"); }, index * 500);
         }else{
             // $(this).removeClass('visible');
         }

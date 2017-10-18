@@ -31,8 +31,11 @@ video {
 
 .header-bg{
 	width: 100%;
-	height: 100%;
+	height: 700px;
 	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .header-image{
@@ -204,6 +207,10 @@ video {
 /*=======================================*/
 /*About Us styling*/
 /*=======================================*/
+	.team-container{
+		float: left;
+		position: relative;
+	}
 	.slogan{
 		padding: 5%;
 		color: #fff;
@@ -211,12 +218,15 @@ video {
 		background: #37738c;
 		text-align: center;
 		letter-spacing: 1.5px;
+		position: absolute;
+		top:0;
+		left:0;
 	}
 	.team{
 		background-image: url(../images/team.jpg);
 		background-size: 100% 100%;
 		background-attachment: fixed;
-		height: 380px;
+		height: 600px;
 	}
 
 	.about{
@@ -294,7 +304,7 @@ video {
 		margin: 0!important;
 	}
 
-	p{
+	.function p{
 		margin-top: 3%!important;
 		font-size: 90%;
 		letter-spacing: 3px;
@@ -398,7 +408,7 @@ video {
 
 .others{
 	float: left;
-	margin: 3% 1.6% 0 1.6%;
+	margin: 3% 1.6% 3% 1.6%;
 	height: 250px;
 	/*width: 30%!important;*/
 	text-align: center;
@@ -469,18 +479,87 @@ video {
 footer{
 	float: left;
 	padding: 3%;
+	color: #fff;
+	background: #37738c;
+	position: relative;
 }
 .mission{
 	float:left;
+	color: #fff;
 }
+
+.mission p{
+	margin-top: 3%!important;
+	letter-spacing: 3px;
+}
+
 .social{
 	float:left;
+	text-align: center;
 }
 
 .job-alerts{
 	float:left;
+	padding-left: 1%;
 }
 
+#sign-up{
+	margin-top: 3%;
+}
+
+#lab{
+	color: #fff;
+}
+
+#lab1{
+	color: #fff;
+}
+
+#form-btn{
+	background: #53afd6;
+	border: 1px solid #4b9ec1;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    transition: background 0.2s,border 0.2s;
+    cursor: pointer;
+}
+
+footer .ui.menu{
+	position: absolute;
+	top: 250px;
+	left: 0;
+	letter-spacing: 1.5px;
+	font-size: 10px;
+}
+
+#footer-nav p{
+	color: #fff;
+	margin-top: 0!important;
+	padding: 1%;
+	letter-spacing: 1.5px;
+	font-size: 10px;
+}
+
+#footer-nav{
+	background: #37738c;
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+footer .ui.menu .item:before{
+	position: absolute;
+    top: 25%;
+    height: 50%;
+    background: rgba(255,255,255,0.1);
+}
+
+#footer-nav a{
+	color: #fff;
+	}
+
+	#footer-nav a:hover,#footer-nava:active,#footer-nav a:visited{
+		color: #5bc0eb;
+	}
 /*=================================================*/
 /*Media queries for screens widtrh more than 768px*/
 /*=================================================*/
