@@ -11,7 +11,7 @@ header{
 	width: 100%;
 	letter-spacing: 1.5px;
 
-	height: 100%;
+	height: 50%;
 }
 
 video { 
@@ -29,9 +29,14 @@ video {
   	transition: 1s opacity;
 }
 
+#hr-video{
+	width: 100%;
+	height: 321px;
+}
+
 .header-bg{
 	width: 100%;
-	height: 700px;
+	height: 321px;
 	background-color: rgba(0,0,0,0.5);
 	position: absolute;
     top: 0;
@@ -47,17 +52,16 @@ video {
 		background-attachment: fixed;
 	}
 
-	.ui.menu{
-		margin: 0;
+/*=======================================*/
+/*Nav styling*/
+/*=======================================*/
+	#nav{
+		/*margin: 0;*/
 		width: 100%;
 		position: absolute;
 		top:0;
 		left: 0;
 	}
-
-/*=======================================*/
-/*Nav styling*/
-/*=======================================*/
 
 	.menu a{
 		font-weight: 600;
@@ -152,7 +156,7 @@ video {
 		text-align: center;
 		font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-weight: 300;
-		font-size: 38px;
+		font-size: 18px;
 		position:absolute;
 		top: 50%;
 		left: 2%;
@@ -170,7 +174,7 @@ video {
 		border: 1px solid #4b9ec1;
     	border-radius: 10px;
     	color: #fff;
-    	font-size: 16px;
+    	font-size: 14px;
     	transition: background 0.2s,border 0.2s;
     	cursor: pointer;
 	}
@@ -188,7 +192,7 @@ video {
     	background: none;
     	border-radius: 10px;
     	color: #fff;
-    	font-size: 16px;
+    	font-size: 14px;
     	transition: background 0.3s,border 0.3s;
     	cursor: pointer;
 	}
@@ -408,7 +412,7 @@ video {
 
 .others{
 	float: left;
-	margin: 3% 1.6% 3% 1.6%;
+	margin: 3% 0% 3% 0%;
 	height: 250px;
 	/*width: 30%!important;*/
 	text-align: center;
@@ -483,6 +487,12 @@ footer{
 	background: #37738c;
 	position: relative;
 }
+
+footer h3{
+	font-size: 14px;
+	letter-spacing: 1.5px;
+}
+
 .mission{
 	float:left;
 	color: #fff;
@@ -490,12 +500,17 @@ footer{
 
 .mission p{
 	margin-top: 3%!important;
-	letter-spacing: 3px;
+	letter-spacing: 1.5px;
 }
 
 .social{
 	float:left;
 	text-align: center;
+	margin: 12% 0 12% 0;
+}
+
+.social h3{
+	text-align: left;
 }
 
 .job-alerts{
@@ -503,12 +518,20 @@ footer{
 	padding-left: 1%;
 }
 
+/*.job-alerts h3{
+		font-size: 14px;
+}*/
+
 #sign-up{
 	margin-top: 3%;
 }
 
 #lab{
 	color: #fff;
+}
+
+#sign-up input{
+		padding: 1.5%;
 }
 
 #lab1{
@@ -523,14 +546,27 @@ footer{
     font-size: 12px;
     transition: background 0.2s,border 0.2s;
     cursor: pointer;
+    margin-bottom: 3%;
 }
 
-footer .ui.menu{
+/*footer .ui.menu{
 	position: absolute;
 	top: 250px;
 	left: 0;
 	letter-spacing: 1.5px;
 	font-size: 10px;
+}*/
+
+#footer-nav{
+	width: 100%;
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	letter-spacing: 1.5px;
+	font-size: 10px;
+	background: #37738c;
+	border: 1px solid rgba(255,255,255,0.1);
+	border-radius: 0;
 }
 
 #footer-nav p{
@@ -541,10 +577,11 @@ footer .ui.menu{
 	font-size: 10px;
 }
 
-#footer-nav{
+/*#footer-nav{
 	background: #37738c;
 	border: 1px solid rgba(255,255,255,0.1);
-}
+	border-radius: 0;
+}*/
 
 footer .ui.menu .item:before{
 	position: absolute;
@@ -555,11 +592,12 @@ footer .ui.menu .item:before{
 
 #footer-nav a{
 	color: #fff;
-	}
+}
 
-	#footer-nav a:hover,#footer-nava:active,#footer-nav a:visited{
+#footer-nav a:hover,#footer-nava:active,#footer-nav a:visited{
 		color: #5bc0eb;
-	}
+}
+
 /*=================================================*/
 /*Media queries for screens widtrh more than 768px*/
 /*=================================================*/
@@ -576,6 +614,10 @@ footer .ui.menu .item:before{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
+    header{
+    	 height: 100%;
+    }
 
     .brand-image img{
     	width: 15%;
@@ -603,6 +645,14 @@ footer .ui.menu .item:before{
 		background: none;
 	}
 
+	#hr-video{
+		height: 730px;
+	}
+
+	.header-bg{
+		height: 730px;
+	}
+
 	.heading{
 		font-size: 46px;
 	}
@@ -615,10 +665,12 @@ footer .ui.menu .item:before{
 	#btn1{
 		top:60%;
 		left:35%;
+		font-size: 16px;
 	}
 
 	#btn2{
 		top:60%;
+		font-size: 16px;
 	}
 
 	.header-btn{
@@ -644,10 +696,35 @@ footer .ui.menu .item:before{
 
 	.others{
 		width: 30%!important;
+		margin: 3% 1.6% 3% 1.6%;
 	}
 
 	.others h3{
 		font-size: 150%;
+	}
+
+	/*.job-alerts h3{
+		font-size: none;
+	}*/
+
+	footer h3{
+		font-size: 17px;
+	}
+
+	.mission p{
+		letter-spacing: 3px;
+	}
+
+	.social{
+		margin: 0 0 0 0;
+	}
+
+	.social h3{
+		text-align: center;
+	}
+
+	#footer-nav{
+		bottom: 0;
 	}
 
 }
